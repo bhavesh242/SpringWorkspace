@@ -26,6 +26,7 @@
      	<property name = "fortuneService" ref="myFortune" />
      	<property name="emailAddress" value="bhavesh@gmail.com"/>
      	<property name="team" value="SRH" />
+     	<property name = "batsman" value = "kohli" />
      	</bean>
      
 </beans>

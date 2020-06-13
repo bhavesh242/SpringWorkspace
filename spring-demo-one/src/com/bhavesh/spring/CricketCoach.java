@@ -8,7 +8,15 @@ public class CricketCoach implements Coach {
 	//add new fields for emailAddress and team
 	private String emailAddress;
 	private String team;
-	
+	private String batsman;
+	public String getBatsman() {
+		return batsman;
+	}
+
+	public void setBatsman(String batsman) {
+		this.batsman = batsman;
+	}
+
 	public String getEmailAddress() {
 		return emailAddress;
 	}

@@ -15,6 +15,7 @@ public class SetterDemoApp {
 		System.out.println(theCoach.getDailyFortune());
 		System.out.println(theCoach.getEmailAddress());
 		System.out.println(theCoach.getTeam());
+		System.out.println(theCoach.getBatsman());
 		//Close context
 		classPathXmlApplicationContext.close();
 		
