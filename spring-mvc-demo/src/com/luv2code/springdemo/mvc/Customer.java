@@ -1,10 +1,12 @@
-package com.luv2code.springdemo.com;
+package com.luv2code.springdemo.mvc;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+
+import com.luv2code.springdemo.mvc.validaiton.CourseCode;
 
 public class Customer {
 	
@@ -16,6 +18,15 @@ public class Customer {
 	@Pattern(regexp = "^[a-zA-Z0-9]{5}", message="Postal Code Should Only contain 5 digits/characters")
 	private String postalCode;
 	
+	@CourseCode(value = "CSE", message="CSE subjects only!")
+	private String courseCode;
+	
+	public String getCourseCode() {
+		return courseCode;
+	}
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
+	}
 	public Integer getFreePasses() {
 		return freePasses;
 	}

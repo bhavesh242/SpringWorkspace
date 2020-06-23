@@ -1,4 +1,4 @@
-package com.luv2code.springdemo.com;
+package com.luv2code.springdemo.mvc;
 
 import javax.validation.Valid;
 
